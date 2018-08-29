@@ -12,7 +12,7 @@ using DocoptNet;
 using Microsoft.Extensions.FileSystemGlobbing;
 using Console = Colorful.Console;
 
-namespace ForeachUtility
+namespace Foreach
 {
     static class Program
     {

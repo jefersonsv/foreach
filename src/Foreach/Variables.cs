@@ -6,7 +6,7 @@ using Colorful;
 using DocoptNet;
 using Console = Colorful.Console;
 
-namespace ForeachUtility
+namespace Foreach
 {
     public static class Variables
     {

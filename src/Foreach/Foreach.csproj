@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <ApplicationIcon>foreach-utility-icon.ico</ApplicationIcon>
+    <ApplicationIcon>foreach-icon.ico</ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>foreach</PackageId>
     <Authors>Jeferson Tenorio</Authors>
@@ -13,11 +13,14 @@
     <Copyright>Copyright © Jeferson Tenorio</Copyright>
     <PackageLicenseUrl>https://gep13.mit-license.org/</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/jefersonsv/foreach</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/jefersonsv/foreach/raw/master/foreach-utility-icon.jpg</PackageIconUrl>
+    <PackageIconUrl>https://github.com/jefersonsv/foreach/raw/master/foreach-icon.jpg</PackageIconUrl>
     <RepositoryUrl>https://github.com/jefersonsv/foreach.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>foreach msdos dos lambda</PackageTags>
     <NeutralLanguage>English</NeutralLanguage>
+    <AssemblyName>Foreach</AssemblyName>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

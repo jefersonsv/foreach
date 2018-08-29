@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ForeachUtility
+namespace Foreach
 {
     public static class ContessaFont
     {
