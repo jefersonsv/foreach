@@ -1,6 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <ToolCommandName>foreach</ToolCommandName>
+    <PackAsTool>True</PackAsTool>
+    <IsPackable>true</IsPackable>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <ApplicationIcon>foreach-icon.ico</ApplicationIcon>
@@ -19,8 +22,8 @@
     <PackageTags>foreach msdos dos lambda</PackageTags>
     <NeutralLanguage>English</NeutralLanguage>
     <AssemblyName>Foreach</AssemblyName>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,7 +32,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="contessa.flf">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 
