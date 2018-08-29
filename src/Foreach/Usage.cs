@@ -29,7 +29,6 @@ Commands:
     text    Foreach in all not blank lines inside a file.
 
 Options:
-
     -f filevariable, --file=<filevariable>      Variable to be replaced with the input file.
     -n fnamevariable, --fname=<fnamevariable>   Variable to be replaced with the input file without extension.
     -u fullvariable, --full=<fullvariable>      Variable to be replaced with the full path and filename of input file.
