@@ -4,7 +4,31 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <ApplicationIcon>foreach-utility-icon.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>foreach</PackageId>
+    <Authors>Jeferson Tenorio</Authors>
+    <Company>Jeferson Tenorio</Company>
+    <Product>foreach</Product>
+    <Description>Turn easy the execution of loops, for and batch command line programs</Description>
+    <Copyright>Copyright © Jeferson Tenorio</Copyright>
+    <PackageLicenseUrl>https://gep13.mit-license.org/</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/jefersonsv/foreach</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/jefersonsv/foreach/raw/master/foreach-utility-icon.jpg</PackageIconUrl>
+    <RepositoryUrl>https://github.com/jefersonsv/foreach.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>foreach msdos dos lambda</PackageTags>
+    <NeutralLanguage>English</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="contessa.flf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="contessa.flf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CliWrap" Version="1.8.5" />
