@@ -15,6 +15,7 @@ namespace Foreach
         /// Try online
         /// <see cref="http://try.docopt.org"/>
         /// <see cref="https://stackoverflow.com/questions/16863371/why-doesnt-my-docopt-option-have-its-default-value"/>
+        /// <see cref="https://dmerej.info/blog/post/docopt-v-argparse/"/>
         /// </summary>
         public const string SHORT_HELP = @"Foreach
 

@@ -61,6 +61,7 @@ foreach.exe text list.txt --lambda $1 * youtube-dl $1
 * It will create an batch file: runner.cmd with each command line to execute
 * The file variable "$1" will be replaced to filename of each file founded
 * The fname variable "$2" will be replaced to filename without extension of each file founded
+* In your command line (after the*) you must escape the character " put a slash before then \"
 
 ```bash
 foreach.exe files *.avi --bat runner-audio.cmd --file $1 --fname $2 * ffmpeg -i \"$1\"  \"$2.mp3\" 
