@@ -8,10 +8,8 @@ Turn easy the execution of loops, for and batch command line programs
 # Usage
 
 ```
-Foreach
-
 Usage:
-    foreach.exe files <file-pattern> [-f=<filevariable>] [-b=<batfilename>] [-n=<fnamevariable>] [-u=<fullvariable>] [-i=<indexvariable>] [-e=<extvariable>]
+    foreach.exe files <file-pattern> [--input=<inputvariable>] [--bat=<batfilename>] [--fname=<fnamevariable>] [-full=<fullvariable>] [-index=<indexvariable>] [--ext=<extvariable>]
     foreach.exe text <source-text-file> [--lambda=<eachline>] [--index=<indexvariable>] [--bat=<batfilename>]
     foreach.exe --version
 
@@ -20,8 +18,7 @@ Commands:
     text    Foreach in all not blank lines inside a file.
 
 Options:
-
-    -f filevariable, --file=<filevariable>      Variable to be replaced with the input file.
+    -p inputvariable, --input=<inputvariable>   Variable to be replaced with the input file.
     -n fnamevariable, --fname=<fnamevariable>   Variable to be replaced with the input file without extension.
     -u fullvariable, --full=<fullvariable>      Variable to be replaced with the full path and filename of input file.
     -i indexvariable, --index=<indexvariable>   Variable to be replaced with the index of loop each.

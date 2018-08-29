@@ -36,13 +36,13 @@ namespace Foreach
             return command;
         }
 
-        public static string FileVariable(IDictionary<string, ValueObject> param, string[] files, int i, string command, Dictionary<string, string> tokens)
+        public static string InputVariable(IDictionary<string, ValueObject> param, string[] files, int i, string command, Dictionary<string, string> tokens)
         {
             // Update file variable
-            if (param["--file"] != null)
+            if (param["--input"] != null)
             {
                 var realValue = Path.GetFileName(files[i]);
-                var paramValue = param["--file"].Value.ToString();
+                var paramValue = param["--input"].Value.ToString();
                 command = ReplaceCommandIfNeeded(command, tokens, realValue, paramValue);
             }
 

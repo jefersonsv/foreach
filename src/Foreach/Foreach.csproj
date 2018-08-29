@@ -23,7 +23,7 @@
     <NeutralLanguage>English</NeutralLanguage>
     <AssemblyName>Foreach</AssemblyName>
     <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <FileVersion>1.0.4.0</FileVersion>
   </PropertyGroup>
 

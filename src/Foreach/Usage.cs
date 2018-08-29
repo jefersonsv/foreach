@@ -20,8 +20,8 @@ namespace Foreach
         public const string SHORT_HELP = @"Foreach
 
 Usage:
-    foreach.exe files <file-pattern> [--file=<filevariable>] [--bat=<batfilename>] [--fname=<fnamevariable>] [-full=<fullvariable>] [-index=<indexvariable>] [--ext=<extvariable>]
-    foreach.exe text <source-text-file> [--lambda=<eachline>] [--index=<indexvariable>] [--bat=<batfilename>]
+    foreach.exe files <file-pattern> [--input=<input>] [--bat=<bat>] [--fname=<fname>] [-full=<full>] [-index=<index>] [--ext=<ext>]
+    foreach.exe text <source-text-file> [--lambda=<lambda>] [--index=<index>] [--bat=<bat>]
     foreach.exe --version
 
 Commands:
@@ -29,15 +29,15 @@ Commands:
     text    Foreach in all not blank lines inside a file.
 
 Options:
-    -f filevariable, --file=<filevariable>      Variable to be replaced with the input file.
-    -n fnamevariable, --fname=<fnamevariable>   Variable to be replaced with the input file without extension.
-    -u fullvariable, --full=<fullvariable>      Variable to be replaced with the full path and filename of input file.
-    -i indexvariable, --index=<indexvariable>   Variable to be replaced with the index of loop each.
-    -e extvariable, --ext=<extvariable>         Variable to be replaced with the extension of input file.
-    -b batfilename, --bat=<batfilename>         Don't execute the command instead of create a batch file with all commands.
-    -l eachline, --lambda=<eachline>            Variable to be replaced with each line of source text file.
-    -h, --help                                  Show this screen
-    --version                                   Show version
+    -p input, --input=<input>       Variable to be replaced with the input file.
+    -n fname, --fname=<fname>       Variable to be replaced with the input file without extension.
+    -u full, --full=<full>          Variable to be replaced with the full path and filename of input file.
+    -i index, --index=<index>       Variable to be replaced with the index of loop each.
+    -e ext, --ext=<ext>             Variable to be replaced with the extension of input file.
+    -b bat, --bat=<bat>             Don't execute the command instead of create a batch file with all commands.
+    -l lambda, --lambda=<lambda>    Variable to be replaced with each line of source text file.
+    -h, --help                      Show this screen
+    --version                       Show version
 ";
 
         // files C:\Data\Temp\Videos\*.mp4 --bat teste.cmd --fname __FNAME__ --full __FULL__ * ffmpeg -n -i \"__FULL__\"  \"C:\Data\Temp\Videos\__FNAME__.mp3\" 

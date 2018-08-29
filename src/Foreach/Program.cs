@@ -40,8 +40,16 @@ namespace Foreach
 
                 var arguments = new Docopt().Apply(Usage.SHORT_HELP, beforeArgs, version: "Foreach", exit: false);
 
-                Run(afterArgs, arguments).Wait();
-                Environment.Exit(0);
+                try
+                {
+                    Run(afterArgs, arguments).Wait();
+                    Environment.Exit(0);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                    Environment.Exit(2);
+                }
             }
             catch (Exception e)
             {
@@ -54,7 +62,6 @@ namespace Foreach
                 //Console.WriteLine($@"        > To convert all wma files in c:\music and convert to mp3 format");
                 //Console.WriteLineFormatted($@"        ffmpeg-batch -s c:\music\*.wma -o mp3", Color.Green);
 
-                Console.WriteLine(Environment.NewLine);
                 Console.WriteLine("Install/Uninstall tool:");
                 Console.WriteLine($@"        > To install tool from system");
                 Console.WriteLineFormatted($@"        dotnet tool install -g foreach", Color.Green);
@@ -89,7 +96,7 @@ namespace Foreach
             }
             else
             {
-                return (null, pathFullyQualified);
+                return (pathFullyQualified, null);
             }
         }
 
@@ -113,7 +120,7 @@ namespace Foreach
                     PrintVariables();
 
                     command = Variables.IndexVariable(param, i, command, tokens);
-                    command = Variables.FileVariable(param, files, i, command, tokens);
+                    command = Variables.InputVariable(param, files, i, command, tokens);
                     command = Variables.FullVariable(param, files, i, command, tokens);
                     command = Variables.FnameVariable(param, files, i, command, tokens);
 
