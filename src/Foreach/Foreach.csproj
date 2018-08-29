@@ -22,9 +22,9 @@
     <PackageTags>foreach msdos dos lambda</PackageTags>
     <NeutralLanguage>English</NeutralLanguage>
     <AssemblyName>Foreach</AssemblyName>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <Version>1.0.3</Version>
-    <FileVersion>1.0.3.0</FileVersion>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <Version>1.0.4</Version>
+    <FileVersion>1.0.4.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

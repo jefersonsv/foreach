@@ -47,14 +47,7 @@ namespace Foreach
             {
                 Console.WriteLine(Usage.SHORT_HELP);
                 Console.WriteLine(string.Empty);
-                
-                Console.WriteLineFormatted($@"        dotnet tool install -g foreach", Color.Green);
-                Console.WriteLine(string.Empty);
-                Console.WriteLine($@"        > To uninstall tool from system");
-                Console.WriteLineFormatted($@"        dotnet tool uninstall -g foreach", Color.Green);
 
-                Console.WriteLine(string.Empty);
-                Console.WriteLine("Examples:");
                 //Console.WriteLine($@"        > To convert all wav files in currenty folder (and sub-directories recursivelly) and convert to mp3 format");
                 //Console.WriteLineFormatted($@"        ffmpeg-batch -s /**/*.wav -o mp3", Color.Green);
                 //Console.WriteLine(string.Empty);

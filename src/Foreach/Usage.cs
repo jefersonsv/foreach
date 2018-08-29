@@ -20,7 +20,7 @@ namespace Foreach
         public const string SHORT_HELP = @"Foreach
 
 Usage:
-    foreach.exe files <file-pattern> [-f=<filevariable>] [-b=<batfilename>] [-n=<fnamevariable>] [-u=<fullvariable>] [-i=<indexvariable>] [-e=<extvariable>]
+    foreach.exe files <file-pattern> [--file=<filevariable>] [--bat=<batfilename>] [--fname=<fnamevariable>] [-full=<fullvariable>] [-index=<indexvariable>] [--ext=<extvariable>]
     foreach.exe text <source-text-file> [--lambda=<eachline>] [--index=<indexvariable>] [--bat=<batfilename>]
     foreach.exe --version
 
