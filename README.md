@@ -12,7 +12,7 @@ Turn easy the execution of loops, for and batch command line programs
 ```
 Usage:
     foreach.exe files <file-pattern> [--input=<inputvariable>] [--bat=<batfilename>] [--fname=<fnamevariable>] [-full=<fullvariable>] [-index=<indexvariable>] [--ext=<extvariable>]
-	foreach.exe filesrecursive <file-pattern> [--input=<input>] [--bat=<bat>] [--fname=<fname>] [-full=<full>] [-index=<index>] [--ext=<ext>]
+    foreach.exe filesrecursive <file-pattern> [--input=<input>] [--bat=<bat>] [--fname=<fname>] [-full=<full>] [-index=<index>] [--ext=<ext>]
     foreach.exe text <source-text-file> [--lambda=<eachline>] [--index=<indexvariable>] [--bat=<batfilename>]
     foreach.exe --version
 
