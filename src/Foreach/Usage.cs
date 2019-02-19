@@ -10,7 +10,6 @@ namespace Foreach
          * 
         --relpath RELPATHVARIABLE     Variable of relative path of the file
         */
-
         /// <summary>
         /// Try online
         /// <see cref="http://try.docopt.org"/>
@@ -42,7 +41,5 @@ Options:
     --version                       Show version
 ";
 
-        // files C:\Data\Temp\Videos\*.mp4 --bat teste.cmd --fname __FNAME__ --full __FULL__ * ffmpeg -n -i \"__FULL__\"  \"C:\Data\Temp\Videos\__FNAME__.mp3\" 
     }
 }
-//--bat youtube.cmd 

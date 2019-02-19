@@ -1,7 +1,9 @@
 # Foreach
 Turn easy the execution of loops, for and batch command line programs
 
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://gep13.mit-license.org) [![NuGet version (FFmpeg-Fluent)](https://img.shields.io/nuget/v/ffmpeg-fluent.svg?style=flat-square)](https://www.nuget.org/packages/foreach/)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://gep13.mit-license.org) 
+[![NuGet version (FFmpeg-Fluent)](https://img.shields.io/nuget/v/ffmpeg-fluent.svg?style=flat-square)](https://www.nuget.org/packages/foreach/) 
+[![Build status](https://ci.appveyor.com/api/projects/status/u3k9evib8q8i71tl?svg=true)](https://ci.appveyor.com/project/jefersonsv/foreach)
 
 > **Foreach is looking for maintainers**
 
