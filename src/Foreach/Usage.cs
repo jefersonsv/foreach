@@ -21,12 +21,14 @@ namespace Foreach
 
 Usage:
     foreach.exe files <file-pattern> [--input=<input>] [--bat=<bat>] [--fname=<fname>] [-full=<full>] [-index=<index>] [--ext=<ext>]
+    foreach.exe filesrecursive <file-pattern> [--input=<input>] [--bat=<bat>] [--fname=<fname>] [-full=<full>] [-index=<index>] [--ext=<ext>]
     foreach.exe text <source-text-file> [--lambda=<lambda>] [--index=<index>] [--bat=<bat>]
     foreach.exe --version
 
 Commands:
-    files   Foreach in files founded. You can use a file pattern to search.
-    text    Foreach in all not blank lines inside a file.
+    files               Foreach in files founded. You can use a file pattern to search.
+    filesrecursive      Foreach in files in all folders that are founded. You can use a file pattern to search.
+    text                Foreach in all not blank lines inside a file.
 
 Options:
     -p input, --input=<input>       Variable to be replaced with the input file.

@@ -105,13 +105,16 @@ namespace Foreach
             StringBuilder batString = new StringBuilder();
             batString.AppendLine("REM " + string.Join(' ', afterArgs));
 
-            if (param["files"].IsTrue)
+            if (param["files"].IsTrue || param["filesrecursive"].IsTrue)
             {
                 var splited = SplitPathFromPattern(param["<file-pattern>"].Value.ToString());
                 var pattern = splited.Item1 ?? "*.*";
                 var path = splited.Item2 ?? Environment.CurrentDirectory;
 
-                var files = System.IO.Directory.GetFiles(path, pattern);
+                var opt = param["filesrecursive"].IsTrue ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly;
+                var files = System.IO.Directory.GetFiles(path, pattern, opt);
+
+                Console.WriteLine($"{files.Count()} files found");
 
                 for (int i = 0; i < files.Count(); i++)
                 {
@@ -131,6 +134,8 @@ namespace Foreach
             {
                 var sourceTextFile = param["<source-text-file>"].Value.ToString();
                 var lines = System.IO.File.ReadAllLines(sourceTextFile);
+
+                Console.WriteLine($"{lines.Count()} items found");
 
                 for (int i = 0; i < lines.Count(); i++)
                 {
@@ -152,6 +157,7 @@ namespace Foreach
             {
                 var batFile = param["--bat"].Value.ToString();
                 File.WriteAllText(batFile, batString.ToString());
+                Console.WriteLine($"Batch file saved {batFile}");
             }
         }
 
